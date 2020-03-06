@@ -30,5 +30,92 @@ letter-spacing --> 자간조절
 background-image: url(파일주소) -->배경에사진넣기 background-size -->배경이미지 사이즈조절
 나중에쓸수도있는태그는 <!----> 태그로 주석처리
 
-3/4 수요일
+3/6 목요일
 
+http://validator.w3.org/ -->언어 오류검사 사이트
+
+시멘틱 마크업 -->엄격한 마크업
+
+<!--head의 요소-->
+
+head 의 title이 브라우저탭의 제목을 정의함.(즐겨찾기제목도 정의.)
+meta태그의 요소
+    -문자세트정의
+    metacharset="utf-8" (utf-8 전세계 언어 문자set)
+    -웹페이지에 대한 설명
+    meta name="description" content="free web tutorials"
+    -검색 엔진에 대한 키워드 정보
+    meta name="keywords" content="HTML, CSS, XML, JavaScript"
+    -페이지 작성자 정보
+    mete name="author" content ="john doe"
+    -뷰포트 설정
+    meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"
+link 요소는 외부 스타일 시트에 연결하는 데 사용됨
+    link rel="stylesheet" type="text/css href="theme.css(주소)"
+    link rel="preload" ad="image" href="이미지주소"
+style요소는 단일 HTML 페이지에 대한 스타일 정보를 정의하는 데 사용됨(인라인, 인터널, 링킹)
+script요소는 클라이언트 측 JavaScript를 정의하는 데 사용됨
+base요소는 페이지의 모든 상대 URl에 대한 기본 URL에
+favicon-->탭창에 아이콘표시되는거, ICO 파비콘 사용, png도가능 두개다 지정시 ICO 우선사용
+
+<!--head의 요소-->
+
+
+<!--body의 요소-->
+
+h1~h6 태그--> 검색엔진은 제목 태그를 사용하여 웹페이지의 구조 및 컨텐츠를 색인화함.
+    사용자는 종종 제목으로 페이지를 훑어봄. 문서구조를 표시하려면 제목을 사용하는 것이 중요함
+    h1를 제목은 주 제목에 사용 되어야하고, 그 뒤에 h2제목이 사용되며 그 다음에 덜 중요한 제목에h3를 사용
+
+hr태그--> HTML 페이지에서 주제와 주제 사이의 구분을 정의 수평선으로 표시
+p태그--> 기본 내용 단락에 사용
+
+브라우저는 페이지가 표시될 때 여분의 공백과 여분의 행을 제거함
+br태그--> 줄바꿈
+
+pre태그--> 사전 형식화 된 텍스트를 정의
+    요소 내부의 텍스트는 공백과 줄 바꿈을 모두 유지, 대신 공백이 데이터로 인식되어 데이터양이 늘어남
+
+b 굵은 텍스트
+strong 중요한 텍스트
+i 이탤릭체
+em 강조된 텍스트
+mark 표시된 텍스트
+small 작은 텍스트
+del 삭제 된 텍스트
+ins 삽입 된 텍스트
+sub 아래첨자 텍스트
+sup 위첨자 텍스트
+
+ul 정렬되지 않은 -->넘버링x
+
+    (ul) (p)영화 목록(/p)  
+            (li) 포드 vs 페라리(/li)
+            (li) 기생충(/li)
+            (li) 백두산(/li)
+        (/ul)
+
+ol 순서가 정해진 -->넘버링o
+
+    (ol) (p)영화 랭킹(/p)  
+        (li) 포드 vs 페라리(/li)
+        (li) 기생충(/li)
+        (li) 백두산(/li)
+    (/ol)
+
+dl 정의할때 사용
+
+    (dl) (p)기생충(/p)  
+        (dt) 감독(/dt)(dd)봉준호(/dd)
+        (dt) 배우(/dt)(dd)송강호(/dd)
+        (dt) 나라(/dt)(dd)한국(/dd)
+    (/dl)
+
+span --> 문서일부를 수정하고 싶을 때 사용
+
+div --> 블록설정, 오른쪽과 왼쪽으로 끝까지 확장 됨(전체넓이 사용)
+
+abbr --> 약어설명
+    (abbr title="설명") (/abbr)
+
+bdo --> 텍스트방향지정
