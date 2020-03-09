@@ -12,21 +12,33 @@
     
     
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet" type="text/css">
+    
     <script>
 
-        function today0306 {document.getElementById("map").innerHTML = "hello JavaScript!";}
 
     </script>
 
    <style>
-    
-           p {text-align:center; font-weight: 100;}
-           h1 {text-align:center; margin-top: 72px;  font-size: 36px; font-weight: 100; color:rgb(104, 104, 104)}
-           h2 {text-align:center; color: rgb(255, 59, 118); font-size: 48px; font-weight: 300;}
-           h3 {text-align:center; margin-top: 72px; font-size: 13px; font-weight: 100;}
-           body {margin: 0; padding: 0; border: 0; font-family: 'Nanum Gothic Coding'; font-size: 14px;}
+            ul {list-style: none;}
+            p, h1, h2, h3 {text-align:center;}
+            p, h1, h3 {font-weight: 100;}
+            h1 {margin-top: 72px;  font-size: 36px; color:rgb(104, 104, 104)}
+            h2 {color: rgb(255, 59, 118); font-size: 48px; font-weight: 300;}
+            h3 {margin-top: 72px; font-size: 13px;}
+            body {margin: 0; padding: 0; border: 0; font-family: 'Nanum Gothic Coding'; font-size: 14px; color:black; line-height: 22px;}
             a {color:white; text-decoration: none;}
-           #map {background-color: rgb(160, 158, 158);}
+            #map {background-color: rgb(160, 158, 158); line-height: 48px; margin: 0; border: 0; padding: 0;}
+            .home_div {height: 100vh; width: 100vw; }
+            .sns_ul {background-color: darkgray;}
+            .sns_li {display: inline-block; width: 24%; margin-left: -4px;}
+            .span_add {font-weight: 900; color:black;}
+            #p_honju {color:white; background-color: rgb(105, 105, 105); line-height: 48px; margin-top: 60px; font-size: 15px; font-weight: 300; margin: 0; padding: 0; border: 0; }
+            .p_man {margin-top: 72px; font-size: 15px;}
+            .p_girl {font-size: 15px; margin-bottom: 60px;}
+            .white {color:white;}
+            .line_height_36 {line-height: 36px;}
+            .width_100 {width:100;}
+            .padding_bottom_400 {padding-bottom: 400px;}
    </style>
 
 
@@ -37,14 +49,14 @@
 
 <!-- 첫페이지 -->    
 
-<div style="height: 100vh; width: 100vw; ">  <!-- 첫페이지 열기 -->    
-    <div style="padding-bottom: 400px;">
+<div class="home_div">  <!-- 첫페이지 열기 -->    
+    <div class="padding_bottom_400">
     <img style="width:100%;" src="img/wedding.jpg">
     <h1>우리결혼합니다</h1>
 
     <h2 title="Wedding day">02/22</h2>
 
-    <h3>김종욱*송다영</h3>
+    <h3 style="margin-top: 90xp;">김종욱*송다영</h3>
     <p style="color: rgb(255, 59, 118)">2020. 02. 22 SAT 12:00 PM</p>
     <p>소풍컨벤션웨딩 7층 라온제나홀</p>
     </div>
@@ -53,7 +65,7 @@
 <!-- <div style="background-color: #fbfbfb; padding-top: 60px;"> -->
 
         <img style="width:100%;" src="img/wedding4.jpg">
-        <p style=" margin-top: 20px;  font-size: 15px;  line-height: 24px;">
+        <p style=" margin-top: 20px;  font-size: 15px; ">
         평생을 같이하고 싶은 사람을 만났습니다.<br>
         서로 아끼며 이해하고, 사랑하며 살겠습니다.<br>
         저희 약속 위에 따뜻한 격려로 축복해 주시면<br>
@@ -61,19 +73,17 @@
     
 
         <img style="width:100%;" src="img/wedding3.jpg">
-        <p style=" margin-top: 72px; font-size: 15px; ">
+        <p class="p_man">
         신랑에게 축하인사&nbsp;&nbsp; <img style="width: 16px;" src="img/call25.png">&nbsp;&nbsp;<img style="width: 16px;" src="img/sms25.png"></p>
-        <p style="font-size: 15px; margin-bottom: 60px;">
+        <p class="p_girl">
         신부에게 축하인사&nbsp;&nbsp; <img style="width: 16px;" src="img/call25.png">&nbsp;&nbsp;<img style="width: 16px;" src="img/sms25.png"></p>
         
 
 
-<ul style="margin: 0; padding: 0; border: 0; font-size: 0;">
-    <p style="text-align: center; color:white; background-color: rgb(105, 105, 105); line-height: 48px; 
-    margin-top: 60px; font-size: 15px; font-weight: 300; margin: 0; padding: 0; border: 0;">
-    혼주분께 연락하기</p>
-
-        <li style="display: inline-block; text-align: center; background-color: rgb(207, 207, 207); padding-top: 36px; padding-bottom: 36px; width: 50%; list-style: none; font-size: 15px; font-weight: 300;">
+    <ul style="margin: 0; padding: 0; border: 0; font-size: 0;">
+        <p id="p_honju">혼주분께 연락하기</p>
+    
+        <li style="display: inline-block; text-align: center; background-color: rgb(207, 207, 207); padding-top: 36px; padding-bottom: 36px; width: 50%; font-size: 15px; font-weight: 300;">
             신랑측 혼주<br><br><br>
             아버지 유도기<br>
             <img style="width: 16px;" src="img/call25.png">&nbsp;|&nbsp;<img style="width: 16px;" src="img/sms25.png"><br><br>
@@ -82,7 +92,7 @@
         </li>
 
 
-        <li style="display: inline-block; text-align: center; background-color: rgb(207, 207, 207); padding-top: 36px; padding-bottom: 36px; width: 50%; list-style: none; font-size: 15px; font-weight: 300;">
+        <li style="display: inline-block; text-align: center; background-color: rgb(207, 207, 207); padding-top: 36px; padding-bottom: 36px; width: 50%; font-size: 15px; font-weight: 300;">
             신부측 혼주<br><br><br>
             아버지 이중호<br>
             <img style="width: 16px;" src="img/call25.png">&nbsp;|&nbsp;<img style="width: 16px;" src="img/sms25.png"><br><br>
@@ -98,27 +108,31 @@
 <div>
 
     <img style="width:100%; margin-top: 60px;" src="img/title_img_4.jpg">
-    <img style="width:100%; margin-top: 60px; margin-bottom: -5px;" src="img/map.jpg">
-    <p id="map" style="color:white; line-height: 48px; margin: 0; border: 0; padding: 0;">
-    <a href="http://map.kakao.com">카카오맵 바로가기</a></p>
+    <img style="width:100%; margin-top: 60px; margin-bottom: -7px;" src="img/map.jpg">
+    <p id="map" class="white line_height_36"><a href="http://map.kakao.com">카카오맵 바로가기</a></p>
 
 </div>
 
 <ul>
 
-    <li style="text-align: center; line-height: 20px; color:rgb(110, 110, 110)"> 
+    <li style="text-align: center; color:rgb(110, 110, 110) "> 
         
-        <span style="font-weight: 900; color:black;">소풍컨벤션웨딩 7층 라온제나홀</span><br>
+        <span class="span_add">
+        <address>
+        소풍컨벤션웨딩 7층 라온제나홀</span><br>
         경기 부천시 송내대로 239<br>
         032-624-7777<br><br>
-        <span style="font-weight: 900; color:black;">버스안내</span><br>
+        </address>
+        </span>    
+        
+        <span class="span_add">버스안내</span><br>
         일반 : 5-6, 23-2, 23-5,37, 50-1, 52,<br>
         70, 87, 6-2, 56, 59, 59-1, 61, 66<br><br>
         광역 : 302, 700, 780, 1001,5000,<br>
         8106, 9300, 8906, 9008<br><br>
-        <span style="font-weight: 900; color:black;">자가용안내</span><br>
+        <span class="span_add">자가용안내</span><br>
         "소풍컨벤션웨딩"검색<br><br>
-        <span style="font-weight: 900; color:black;">지하철안내</span><br>
+        <span class="span_add">지하철안내</span><br>
         7호선 상동역 - 1번출구 - 도보2분<br>
         1호선 송내역 - 2번출구 - 27번 버스
 
@@ -127,20 +141,20 @@
 </ul>
 
 
-<div style="background-color: darkgray; ">
-    <div style="display: inline-block; width: 25%; margin-left: -4px;">
+<ul class="sns_ul">
+    <li class="sns_li">
         <img src="img/btn_facebook.png" style="width:100%;">
-    </div>
-    <div style="display: inline-block; width: 25%; margin-left: -4px;">
+    </li>
+    <li class="sns_li">
         <img src="img/btn_twitter.png" style="width:100%;">
-    </div>
-    <div style="display: inline-block; width: 25%; margin-left: -4px;">
+    </li>
+    <li class="sns_li">
         <img src="img/btn_kakao.png" style="width:100%;">
-    </div>
-    <div style="display: inline-block; width: 23%; margin-left: -4px;">
+    </li>
+    <li class="sns_li">
         <img src="img/btn_story.png" style="width:100%;">
-    </div>
-</div>
+    </li>
+</ul>
 
 <p style="text-align: center; font-size: 24px; font-weight: 100; color: darkgray; letter-spacing: 12px; ">BHANDS CARD</p>
 
