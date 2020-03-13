@@ -22,23 +22,28 @@
             ul {list-style: none;}
             p, h1, h2, h3 {text-align:center;}
             p, h1, h3 {font-weight: 100;}
+            p {line-height: ;}
             h1 {margin-top: 72px;  font-size: 36px; color:rgb(104, 104, 104)}
             h2 {color: rgb(255, 59, 118); font-size: 48px; font-weight: 300;}
             h3 {margin-top: 72px; font-size: 13px;}
-            body {margin: 0; padding: 0; border: 0; font-family: 'Nanum Gothic Coding'; font-size: 14px; color:black; line-height: 22px;}
+            body {margin: 0; padding: 0; border: 0; text-align: center; font-family: 'Nanum Gothic Coding'; font-size: 14px; color:black; line-height: 22px;}
             a {color:white; text-decoration: none;}
             #map {background-color: rgb(160, 158, 158); line-height: 48px; margin: 0; border: 0; padding: 0;}
             .home_div {height: 100vh; width: 100vw; display: flex; justify-content: center; align-items: center;}
-            .sns_ul {background-color: darkgray;}
-            .sns_li {display: inline-block; width: 24%; margin-left: -4px;}
             .span_add {font-weight: 900; color:black;}
-            #p_honju {color:white; background-color: rgb(105, 105, 105); line-height: 48px; margin-top: 60px; font-size: 15px; font-weight: 300; margin: 0; padding: 0; border: 0; }
+            .ul_honju {margin:0; padding:0; border:0; display: flex; justify-content: center; align-items: center; width: 100vw;}
+            .p_honju {color:white; background-color: rgb(105, 105, 105); line-height: 48px; margin-top: 60px; font-size: 15px; font-weight: 300; margin: 0; padding: 0; border: 0; }
+            .li_honju {text-align:center; width: 50vw; background-color: rgb(216, 216, 216); line-height: 27px; padding-bottom: 30px;}
             .p_man {margin-top: 72px; font-size: 15px;}
             .p_girl {font-size: 15px; margin-bottom: 60px;}
+            .sns_ul {margin:0; padding:0; border:0;  background-color: darkgray; margin-top: 74px; display: flex; justify-content: center; align-items: center;}
+            .sns_li {width: 25%;}
+            .address_wedding {margin:0; padding:0; border:0;}
             .white {color:white;}
             .line_height_36 {line-height: 36px;}
             .width_100 {width:100;}
             .padding_bottom_400 {padding-bottom: 400px;}
+            
    </style>
 
 
@@ -60,7 +65,6 @@
     </div>
 </div>  <!-- 첫페이지 닫기 -->    
 
-<!-- <div style="background-color: #fbfbfb; padding-top: 60px;"> -->
 
         <img style="width:100%;" src="img/wedding4.jpg">
         <p style=" margin-top: 20px;  font-size: 15px; ">
@@ -76,31 +80,24 @@
         <p class="p_girl">
         신부에게 축하인사&nbsp;&nbsp; <img style="width: 16px;" src="img/call25.png">&nbsp;&nbsp;<img style="width: 16px;" src="img/sms25.png"></p>
         
-
-
-    <ul style="margin: 0; padding: 0; border: 0; font-size: 0;">
-        <p id="p_honju">혼주분께 연락하기</p>
-    
-        <li style="display: inline-block; text-align: center; background-color: rgb(207, 207, 207); padding-top: 36px; padding-bottom: 36px; width: 50%; font-size: 15px; font-weight: 300;">
-            신랑측 혼주<br><br><br>
-            아버지 유도기<br>
-            <img style="width: 16px;" src="img/call25.png">&nbsp;|&nbsp;<img style="width: 16px;" src="img/sms25.png"><br><br>
-            어머니 이순오<br>
-            <img style="width: 16px;" src="img/call25.png">&nbsp;|&nbsp;<img style="width: 16px;" src="img/sms25.png"></p>
+     
+    <p class="p_honju">혼주분께 연락하기</p>
+    <ul class="ul_honju">
+        <li class="li_honju">
+            <p >신랑측 혼주</p>
+            <p >아버지 유도기</p>
+            <img src="img/call25.png" width="15px"> | <img src="img/sms25.png" width="15px">
+            <p >어머니 이순오</p>
+            <img src="img/call25.png" width="15px"> | <img src="img/sms25.png" width="15px">
         </li>
-
-
-        <li style="display: inline-block; text-align: center; background-color: rgb(207, 207, 207); padding-top: 36px; padding-bottom: 36px; width: 50%; font-size: 15px; font-weight: 300;">
-            신부측 혼주<br><br><br>
-            아버지 이중호<br>
-            <img style="width: 16px;" src="img/call25.png">&nbsp;|&nbsp;<img style="width: 16px;" src="img/sms25.png"><br><br>
-            어머니 고영심<br>
-            <img style="width: 16px;" src="img/call25.png">&nbsp;|&nbsp;<img style="width: 16px;" src="img/sms25.png"></p>
+        <li class="li_honju">
+            <p >신부측 혼주</p>
+            <p >아버지 이중호</p>
+            <img src="img/call25.png" width="15px"> | <img src="img/sms25.png" width="15px">
+            <p >어머니 고영심</p>
+            <img src="img/call25.png" width="15px"> | <img src="img/sms25.png" width="15px">
         </li>
-
-   
-</ul>
-
+    </ul>
 
 
 <div>
@@ -111,7 +108,7 @@
 
 </div>
 
-<ul>
+<ul class="address_wedding">
 
     <li style="text-align: center; color:rgb(110, 110, 110) "> 
         
@@ -141,17 +138,13 @@
 
 <ul class="sns_ul">
     <li class="sns_li">
-        <img src="img/btn_facebook.png" style="width:100%;">
-    </li>
+        <img src="img/btn_facebook.png" style="width:100%;"></li>
     <li class="sns_li">
-        <img src="img/btn_twitter.png" style="width:100%;">
-    </li>
+        <img src="img/btn_twitter.png" style="width:100%;"></li>
     <li class="sns_li">
-        <img src="img/btn_kakao.png" style="width:100%;">
-    </li>
+        <img src="img/btn_kakao.png" style="width:100%;"></li>
     <li class="sns_li">
-        <img src="img/btn_story.png" style="width:100%;">
-    </li>
+        <img src="img/btn_story.png" style="width:100%;"></li>
 </ul>
 
 <p style="text-align: center; font-size: 24px; font-weight: 100; color: darkgray; letter-spacing: 12px; ">BHANDS CARD</p>
